@@ -1,0 +1,16 @@
+<div class="card mt-2 basicc">
+    <div class="card-body">
+        <div class="header basic">
+            <p>{{plan?.name || 'N/A'}}</p>
+            <h2>₦ {{ plan?.amount | number }}</h2>
+        </div>
+        <p class="what">What you get:</p>
+        <ul *ngFor="let item of plan?.membership_benefits">
+            <li>
+                <img src="assets/images/Checkmark.png" alt="">
+                <p>{{item || 'N/A'}}</p>
+            </li>
+        </ul>
+        <button>Buy Plan</button>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+<section class="welcome">
+    <div class="container step1">
+        <h3 class="primarycol maginval">Welcome to the Metropolitan Family!</h3>
+
+        <div class="slidess">
+            <div [@fade]="status" *ngIf="slide == 0" class="slides">
+                <h1>Where <span class="ull">students'</span> <br>lives <span class="ull">matter</span> <span
+                        class="primarycol">.</span></h1>
+                <p class="ptagss">Give your life and career a lift ! Sign up today</p>
+            </div>
+            <div [@fade]="status" *ngIf="slide == 1" class="slides">
+                <h1><span class="ull">Students</span> are the <br> real
+                    <span class="ull"> Superheroes</span> <span class="primarycol">.</span>
+                </h1>
+                <p class="ptagss">Sign up on the Metropolitan project where students lives truly matters!</p>
+            </div>
+            <div [@fade]="status" *ngIf="slide == 2" class="slides">
+                <h1> Give your <span class="ull">Career</span><br>and
+                    <span class="ull"> life</span> a lift<span class="primarycol">.</span>
+                </h1>
+                <p class="ptagss">Sign up on the Metropolitan project where students lives truly matters!</p>
+            </div>
+            <div [@fade]="status" *ngIf="slide == 3" class="slides">
+                <h1>A world of <span class="ull">endless</span><br>
+                    <span class="ull"> possibilities</span><span class="primarycol">.</span>
+                </h1>
+                <p class="ptagss">It's your right, and not a previlege to access a better future.</p>
+            </div>
+        </div>
+
+        <div class="getstartedbtn">
+            <button class="btn-custom getStarted" > Get Started </button>
+        </div>
+
+        <div class="imageslider">            
+            <ngb-carousel (slide)="onSlide($event)">
+                <ng-template ngbSlide *ngFor="let item of images">
+                    <div class="picsum-img-wrapper">
+                        <img [src]="item"  />
+                    </div>
+                </ng-template>
+
+            </ngb-carousel>
+
+        </div>
+
+        
+    </div>
+</section>
+
+<section class="benefits">
+    <app-features></app-features>
+</section>
+<section class="esteemed">
+    <app-customers></app-customers>
+</section>
+
+<section class="billings">
+    <div class="container">
+        <h1 class="aligntext">Your first steps to a new world <span>.</span></h1>
+        <p class="aligntext">We have four levels of subscription that suites all students, no matter the sector,
+            age, or employment.
+        </p>
+        <div class="plans row">
+            <div class="col-md-3" *ngFor="let item of allPlans">
+                <app-plans [plan]="item"></app-plans>
+            </div>
+        </div>
+
+    </div>
+</section>

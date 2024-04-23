@@ -1,0 +1,15 @@
+
+.page{
+    position: relative;
+    min-height: 100vh;
+}
+
+.pagebody{
+    width: 100vw;
+    height: 90vh;
+    z-index: 0;
+    position: fixed;
+    bottom: 0;
+    transition: all .5s ease;
+    overflow: auto;
+}

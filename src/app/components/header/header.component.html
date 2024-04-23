@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg">
+
+  <div class="container">
+    <a class="navbar-brand" href="/"><img src="assets/images/mat.gif" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/mall">Course Highligh</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/gallery">Benefits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/user/dashboard">Dashboard</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <ul class="navbar-nav side2">
+          <!-- <li class="nav-item"><a class="nav-link" routerLink="/cart"><mat-icon matBadge="{{cartCount}}" matBadgeColor="warn" fontSet="material-icons-outlined">shopping_cart</mat-icon> Cart</a></li> -->
+          <li class="nav-item" ><a class="nav-link" routerLink="/auth/login">Log In</a></li>
+          <li class="nav-item"><button class="btn-custom">Get Started</button></li>
+          <!-- <li class="nav-item" *ngIf="authStatus"><a class="nav-link" (click)="logout()" style="cursor: pointer;">Log Out</a></li> -->
+        </ul>
+      </span>
+    </div>
+  </div>
+</nav>

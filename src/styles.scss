@@ -1,1 +1,131 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+  background: #ffffff;
+}
+
+
+.btn-naked {
+  border-radius: 8px;
+  border: 1px solid #85888f;
+  background: none;
+  color: #85888f;
+  padding: .5rem 1rem;
+  font-size: 14px;
+  outline: none !important;
+}
+
+.empty-grey {
+  color: #667085 !important;
+}
+
+.primarycol{
+  color: #E99C1B;
+}
+.fade{
+  color:#8A8C8F ;
+}
+
+.btn-custom {
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid var(--brand-colors-accent-green-saturated, #E99C1B);
+  background: var(--brand-colors-accent-green-saturated, #E99C1B);
+  color: #ffffff;
+  outline: none !important;
+  padding: .5rem 1rem;
+  font-size: 14px;
+  &:focus {
+    box-shadow: none;
+    background-color: #A64912;
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-color: #A64912;
+
+  }
+}
+
+.btn-custom-blue {
+  border: 1px solid var(--primary-600, #4086EF) !important;
+  background: var(--primary-600, #4086EF) !important;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05) !important;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  border: 2px solid #D0D5DD;
+  width: 15px;
+  height: 15px;
+
+  &:focus {
+    border: 1px solid #000000;
+    box-shadow: none;
+  }
+}
+
+.btn-outline {
+  outline: none !important;
+  padding: .5rem 1rem;
+  color: var(--primary-700, #0D47A1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 8px;
+  border: 1px solid var(--primary-50, #F5F9FF);
+  background: var(--primary-50, #F5F9FF);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+  &:hover {
+    border: 1px solid rgb(219, 219, 219);
+  }
+}
+
+.required {
+  color: red !important;
+}
+
+
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.error-msg {
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+label,
+.custom-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #000000;
+  text-align: left;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
